@@ -1,6 +1,6 @@
 ## Steps to create your own exception class
 
-!) Create a new class whose name should end with *Exception* like *ClassNameException*.This is a convention to differentiate an exception class from regular ones.
+1) Create a new class whose name should end with *Exception* like *ClassNameException*.This is a convention to differentiate an exception class from regular ones.
 
 2) Make the class extends one of the exceptions which are subtypes of the *java.lang.Exception class*.Generally, a custom exception class always extends directly from the Exception class.
 
