@@ -4,6 +4,7 @@
 
 2) Make the class extends one of the exceptions which are subtypes of the *java.lang.Exception class*.Generally, a custom exception class always extends directly from the Exception class.
 
+<<<<<<< HEAD
 3) Create a constructor with a String parameter which is the detail message of the exception. In this constructor, simply call the super constructor and pass the message. 
 
 Here, is the Exception file with class SubuException:
@@ -27,3 +28,44 @@ public static void main(String[] args) {
 
 OUTPUT:
 You cannot reserve this name. SubuException: NameIsReserved
+=======
+3) Create a constructor with a String parameter which is the detail message of the exception. In this constructor, simply call the super constructor and pass the message.
+
+
+*Here*, is the Exception file with class SubuException:
+
+public class SubuException extends Exception 
+{
+    public SubuException(String hello)
+    {
+        super(hello);  
+    }
+} 
+
+We create another file *test.java* to run the code of above java code
+
+class Test
+{
+    static void ReserveName(String name) throws SubuException
+    {
+        if(name == "subu")
+        {
+            throw new SubuException("NameIsReserved");
+        }else{
+            System.out.println("You can use this name.");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+           ReserveName("subu");
+        } 
+        catch (SubuException e) {
+            System.out.println("You cannot reserve this name. " + e);
+        }
+    }
+    }
+    
+    OUTPUT:
+    You cannot reserve this name. SubuException: NameIsReserved
+>>>>>>> 30ef5f6473072255209f58dcf998f58802e94e15
