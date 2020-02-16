@@ -1,4 +1,4 @@
-##Java Enhanced Loop (For-each loop)
+***Java Enhanced Loop (For-each loop)
 
 The Java for-each loop or enhanced for loop is introduced since J2SE 5.0. It provides an alternative approach to traverse the array or collection in Java. It is mainly used to traverse the array or collection elements. The advantage of the for-each loop is that it eliminates the possibility of bugs and makes the code more readable. It is known as the for-each loop because it traverses each element one by one.
 
@@ -6,11 +6,11 @@ The drawback of the enhanced for loop is that it cannot traverse the elements in
 
 But, it is recommended to use the Java for-each loop for traversing the elements of array and collection because it makes the code readable.
 
-Advantages
+**Advantages**
 1) It makes the code more readable.
 2) It eliminates the possibility of programming errors.
 
-Syntax
+*Syntax*
 The syntax of Java for-each loop consists of data_type with the variable followed by a colon (:), then array or collection.
 
 for(data_type variable : array | collection){  
@@ -18,7 +18,7 @@ for(data_type variable : array | collection){
 }  
 
 
-##Example 
+**Example 
 
 //An example of Java for-each loop  
 class ForEachExample1{  
