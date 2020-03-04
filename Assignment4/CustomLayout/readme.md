@@ -1,4 +1,4 @@
-##Custom Layout##
+#Custom Layout#
 
 //creating a custom layout manager
 
